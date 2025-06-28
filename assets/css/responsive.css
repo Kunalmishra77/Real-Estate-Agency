@@ -17,7 +17,14 @@
         transform: translateX(0%);
         visibility: visible;
         color: var(--dark-color);
-
+    }
+    .nav-container.active li a{
+        font-size: 1.5em;
+        font-weight: bolder;
+    }
+    .nav-container.active .nav-list{
+        display: block;
+        
     }
 
     .nav-container .nav-list-container {
@@ -31,7 +38,9 @@
     .nav-container .nav-list-container li a {
         font-weight: 600;
     }
-
+    .header-col {
+        justify-content: end;
+    }
     .menu-close-btn {
         display: block;
         position: absolute;
@@ -70,22 +79,56 @@
     .featured-properties-content-container, .top-properties-content-container{
         grid-template-columns: 1fr 1fr;
     }
+    .txt-container ul li{
+        font-size: 14px;
+    }
 }
 
-@media only screen and (max-width:800px){
-    .hero-section .hero-container .search-form-container .serach-form{
+@media only screen and (max-width:1150px){
+    .txt-container ul li{
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1010px){
+    .featured-properties-content-container, .top-properties-content-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .txt-container ul li{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:640px){
+    .hero-container{
+        gap: 10px;
+    }
+    .hero-txt-container{
+        margin-top: 15px;
+    }
+    .hero-section .hero-container .search-form-container form{
+        display: flex;
         flex-direction: column;
+        margin-bottom: 20px;
     }
     .featured-properties-content-container, .top-properties-content-container{
+        display: flex;
+        flex-direction: column;
         grid-template-columns: 1fr;
     }
-    .featured-properties-menu-container .featured-properties-menu-list{
+  
+    .featured-properties-menu-list{
         flex-direction: column;
+        align-items: center;
         width: 100%;
     }
-    .featured-properties-menu-container .featured-properties-menu-list li, .featured-properties-menu-container .featured-properties-menu-list li button{
+    .featured-properties-menu-list li{
         width: 100%;
     }
+    .featured-properties-menu-list li a{
+        width: 100%;
+    }
+
     .search-section .search-container .search-row, .search-section .search-container .search-row:nth-child(2){
         flex-direction: column;
     }
