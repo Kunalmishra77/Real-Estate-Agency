@@ -99,6 +99,17 @@
     }
 }
 
+@media (min-width: 640px) and (max-width: 1080px){
+    .team-container .contact-info-container .team-row{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .search-form-container .search-form{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
 @media only screen and (max-width:640px){
     .hero-container{
         gap: 10px;
@@ -110,6 +121,9 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;
+    }
+    .search-form-container .search-form fieldset label{
+        font-size: 12px;
     }
     .featured-properties-content-container, .top-properties-content-container{
         display: flex;
@@ -128,6 +142,19 @@
     .featured-properties-menu-list li a{
         width: 100%;
     }
+    .services-row{
+        flex-direction: column;
+    }
+    .service-content-container .services-row:nth-child(2){
+        flex-direction: column;
+    }
+    .service-content-container .services-col{
+        display: flex;
+        justify-content: center;
+    }
+    .service-content-container .services-col .txt-container{
+        text-align: center;
+    }
 
     .search-section .search-container .search-row, .search-section .search-container .search-row:nth-child(2){
         flex-direction: column;
@@ -142,6 +169,13 @@
         flex: auto;
         width: 100%;
     }
+    .contact-col .title-container{
+        text-align: center;
+    }
+    .contact-col .contact-info-container{
+        padding: 0 10px;
+    }
+
     .team-row{
         flex-direction: column;
     }

@@ -247,7 +247,9 @@ header {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
-
+/* .product-card .txt-container{
+    width: 100;
+} */
 .product-card .txt-container h3 {
     transition: all 0.3s linear;
 }
@@ -522,16 +524,12 @@ header {
     display: block;
     object-fit: cover;
 }
-.team-col .txt-container h4{
+.team-col .txt-container {
+    width: auto;
     font-size: clamp(1.2em, 1.6vw, 2em);
     color: var(--primary-color);
 }
-.team-col .txt-container p{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 200px;
-}
+
 .contact-container{
     cursor: grab;
 }
