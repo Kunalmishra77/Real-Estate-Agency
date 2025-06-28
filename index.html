@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bento Works</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css"
+        integrity="sha512-v8QQ0YQ3H4K6Ic3PJkym91KoeNT5S3PnDKvqnwqFD1oiqIl653crGZplPdU5KKtHjO0QKcQ2aUlQZYjHczkmGw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="assets/images/hero/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/utils.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- Header section start here -->
+    <header class="w-100 d-flex justify-center items-center">
+        <div class="header-container d-flex justify-center items-center p-10">
+            <div class="header-col">
+                <div class="logo-container">
+                    <a href="#">
+                        <img src="./assets/images/hero/logo.png" alt="Logo" class="logo w-100 h-100">
+                    </a>
+                </div>
+            </div>
+            <div class="header-col">
+                <nav class="nav-container d-flex justify-center items-center" id="navbar">
+                    <ul class="nav-list d-flex justify-center items-center gap-20 text-base">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#properties">Properties</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <button class="menu-close-btn" id="close-menu-btn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </nav>
+            </div>
+            <div class="header-col d-flex justify-center items-center">
+                <button class="quote-btn px-20 py-10 border-0 rounded-lg">Request a Quote</button>
+                <button class="menu-open-btn" id="open-menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- Header section end here -->
+    <!-- Hero section start here -->
+    <section class="hero-section w-100 h-100 d-flex justify-center items-center">
+        <div class="hero-container w-100 h-100 d-flex justify-center items-center flex-column gap-30">
+            <div class="hero-txt-container d-flex justify-center items-center flex-column gap-10">
+                <h3 class="hero-txt text-center">Find Your Dream Home with Ease!</h3>
+                <p class="hero-desc text-base text-center">Discover properties that suit your lifestyle and budget.
+                    Whether you're buying, selling, or renting, we’ve got the perfect solution for you. Your next home
+                    is just a search away!</p>
+            </div>
+            <div class="search-form-container d-flex flex-column justify-center items-center gap-20">
+                <div class="search-type-container w-100 d-flex justify-center items-center">
+                    <div class="search-type-inner w-100 d-flex justify-center items-center gap-20">
+                        <button class="search-type-btn active py-10 px-20 border-0 rounded-lg">For Rent</button>
+                        <button class="search-type-btn py-10 px-20 border-0 rounded-lg">For Sale</button>
+                    </div>
+                </div>
+                <form action="#search" class="search-form d-flex justify-center items-center gap-10 w-100 p-20">
+                    <fieldset class="search-input-container w-100 d-flex flex-column justify-center items-start gap-5">
+                        <label for="keyword">Keyword</label>
+                        <input type="text" class="search-input w-100 p-10" placeholder="Keyword" id="keyword">
+                    </fieldset>
+                    <fieldset class="search-input-container w-100 d-flex flex-column justify-center items-start gap-5">
+                        <label for="propertytype">Property Type</label>
+                        <select name="propertytype" id="propertytype" class="search-input w-100 p-10">
+                            <option value="#">Property Type</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="condominium">Condominium</option>
+                            <option value="townhouse">Townhouse</option>
+                            <option value="villa">Villa</option>
+                            <option value="bungalow">Bungalow</option>
+                            <option value="penthouse">Penthouse</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="search-input-container w-100 d-flex flex-column justify-center items-start gap-5">
+                        <label for="location">Location</label>
+                        <input type="text" class="search-input w-100 p-10" placeholder="Location" id="location">
+                    </fieldset>
+                    <fieldset class="search-input-container w-100 d-flex flex-column justify-center items-start gap-5">
+                        <label for="location"></label>
+                        <button class="search-form-btn w-100 rounded-lg mt-15">Find My Home</button>
+
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Hero section end here -->
+    <!-- Featured section start here-->
+    <section class="featured-properties-section w-100 h-100 d-flex justify-center items-center">
+        <div class="featured-properties-container w-100 h-100 d-flex justify-center items-center flex-column gap-20">
+            <div class="title-container d-flex flex-column gap-5 text-center">
+                <h5 class="subtitle">Featured Properties</h5>
+                <h2 class="title">Featured Properties Just for You!</h2>
+            </div>
+            <div class="content-container d-flex flex-column gap-20 mt-20">
+                <div class="featured-properties-menu-container d-flex justify-center items-center py-15">
+                    <ul class="featured-properties-menu-list d-flex justify-center items-center gap-20">
+                        <li><a href="#" class="active" data-filter="all">View All</a></li>
+                        <li><a href="#" data-filter="apartment">Apartment</a></li>
+                        <li><a href="#" data-filter="office">Office</a></li>
+                        <li><a href="#" data-filter="villas">Villas</a></li>
+                        <li><a href="#" data-filter="house">House</a></li>
+                    </ul>
+                </div>
+                <div class="featured-properties-content-container grid-layout gap-20 justify-center">
+                    <div class="product-card d-flex flex-column gap-5" data-category="house">
+                        <div class="img-container"><img src="assets/images/properties/1.jpeg" alt="product"
+                                class="product-img"></div>
+                        <div class="txt-container d-flex flex-column gap-10 justify-center">
+                            <h3 class="text-center">Modern Family Home</h3>
+                            <ul class="product-featured-list d-flex justify-between">
+                                <li><i class="fa-solid fa-bed"></i> Beds:3</li>
+                                <li><i class="fa-solid fa-bath"></i> Baths:2</li>
+                                <li><i class="fa-solid fa-expand"></i> Sqft:1,150</li>
+                            </ul>
+                            <div class="price-container d-flex justify-end">
+                                <h5>$510,000</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card d-flex flex-column gap-5" data-category="apartment">
+                        <div class="img-container"><img src="assets/images/properties/2.jpeg" alt="product"
+                                class="product-img"></div>
+                        <div class="txt-container d-flex flex-column gap-10 justify-center">
+                            <h3 class="text-center">Downtown Apartment</h3>
+                            <ul class="product-featured-list d-flex justify-between">
+                                <li><i class="fa-solid fa-bed"></i> Beds:2</li>
+                                <li><i class="fa-solid fa-bath"></i> Baths:1</li>
+                                <li><i class="fa-solid fa-expand"></i> Sqft:950</li>
+                            </ul>
+                            <div class="price-container d-flex justify-end">
+                                <h5>$475,000</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card d-flex flex-column gap-5" data-category="villas">
+                        <div class="img-container"><img src="assets/images/properties/3.jpeg" alt="product"
+                                class="product-img"></div>
+                        <div class="txt-container d-flex flex-column gap-10 justify-center">
+                            <h3 class="text-center">Luxury Villa</h3>
+                            <ul class="product-featured-list d-flex justify-between">
+                                <li><i class="fa-solid fa-bed"></i> Beds:5</li>
+                                <li><i class="fa-solid fa-bath"></i> Baths:4</li>
+                                <li><i class="fa-solid fa-expand"></i> Sqft:3,200</li>
+                            </ul>
+                            <div class="price-container d-flex justify-end">
+                                <h5>$620,000</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card d-flex flex-column gap-5" data-category="house">
+                        <div class="img-container"><img src="assets/images/properties/4.jpeg" alt="product"
+                                class="product-img"></div>
+                        <div class="txt-container d-flex flex-column gap-10 justify-center">
+                            <h3 class="text-center">Cozy Bungalow</h3>
+                            <ul class="product-featured-list d-flex justify-between">
+                                <li><i class="fa-solid fa-bed"></i> Beds:3</li>
+                                <li><i class="fa-solid fa-bath"></i> Baths:2</li>
+                                <li><i class="fa-solid fa-expand"></i> Sqft:1,400</li>
+                            </ul>
+                            <div class="price-container d-flex justify-end">
+                                <h5>$210,000</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card d-flex flex-column gap-5" data-category="office">
+                        <div class="img-container"><img src="assets/images/properties/5.jpeg" alt="product"
+                                class="product-img"></div>
+                        <div class="txt-container d-flex flex-column gap-10 justify-center">
+                            <h3 class="text-center">Suburban Townhouse</h3>
+                            <ul class="product-featured-list d-flex justify-between">
+                                <li><i class="fa-solid fa-bed"></i> Beds:4</li>
+                                <li><i class="fa-solid fa-bath"></i> Baths:3</li>
+                                <li><i class="fa-solid fa-expand"></i> Sqft:2,000</li>
+                            </ul>
+                            <div class="price-container d-flex justify-end">
+                                <h5>$530,000</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card d-flex flex-column gap-5" data-category="villas">
+                        <div class="img-container"><img src="assets/images/properties/6.jpeg" alt="product"
+                                class="product-img"></div>
+                        <div class="txt-container d-flex flex-column gap-10 justify-center">
+                            <h3 class="text-center">Charming Cottage</h3>
+                            <ul class="product-featured-list d-flex justify-between">
+                                <li><i class="fa-solid fa-bed"></i> Beds:2</li>
+                                <li><i class="fa-solid fa-bath"></i> Baths:1</li>
+                                <li><i class="fa-solid fa-expand"></i> Sqft:850</li>
+                            </ul>
+                            <div class="price-container d-flex justify-end">
+                                <h5>$2,450,000</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card d-flex flex-column gap-5" data-category="apartment">
+                        <div class="img-container"><img src="assets/images/properties/7.jpeg" alt="product"
+                                class="product-img"></div>
+                        <div class="txt-container d-flex flex-column gap-10 justify-center">
+                            <h3 class="text-center">Spacious Penthouse</h3>
+                            <ul class="product-featured-list d-flex justify-between">
+                                <li><i class="fa-solid fa-bed"></i> Beds:4</li>
+                                <li><i class="fa-solid fa-bath"></i> Baths:3</li>
+                                <li><i class="fa-solid fa-expand"></i> Sqft:2,800</li>
+                            </ul>
+                            <div class="price-container d-flex justify-end">
+                                <h5>$530,000</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card d-flex flex-column gap-5" data-category="apartment">
+                        <div class="img-container"><img src="assets/images/properties/8.jpeg" alt="product"
+                                class="product-img"></div>
+                        <div class="txt-container d-flex flex-column gap-10 justify-center">
+                            <h3 class="text-center">Modern Loft</h3>
+                            <ul class="product-featured-list d-flex justify-between">
+                                <li><i class="fa-solid fa-bed"></i> Beds:1</li>
+                                <li><i class="fa-solid fa-bath"></i> Baths:1</li>
+                                <li><i class="fa-solid fa-expand"></i> Sqft:700</li>
+                            </ul>
+                            <div class="price-container d-flex justify-end">
+                                <h5>$390,000</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card d-flex flex-column gap-5" data-category="office">
+                        <div class="img-container"><img src="assets/images/properties/9.jpeg" alt="product"
+                                class="product-img"></div>
+                        <div class="txt-container d-flex flex-column gap-10 justify-center">
+                            <h3 class="text-center">Skyline Penthouse</h3>
+                            <ul class="product-featured-list d-flex justify-between">
+                                <li><i class="fa-solid fa-bed"></i> Beds:4</li>
+                                <li><i class="fa-solid fa-bath"></i> Baths:3</li>
+                                <li><i class="fa-solid fa-expand"></i> Sqft:3,000</li>
+                            </ul>
+                            <div class="price-container d-flex justify-end">
+                                <h5>$340,000</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Featured section end here-->
+    <!-- Services section start here -->
+    <section class="services-section w-100 h-100 d-flex justify-center items-center py-30 px-0">
+        <div class="service-container w-100 h-100 d-flex justify-center items-center flex-column gap-20">
+            <div class="title-container d-flex flex-column gap-5 text-center text-center">
+                <h5 class="subtitle">Our Services</h5>
+                <h2 class="title">What We Offer</h2>
+            </div>
+            <div class="service-content-container w-100 h-100 d-flex flex-column justify-center items-center">
+                <div class="services-row w-100 h-100 d-flex justify-center items-center ">
+                    <div class="services-col">
+                        <div class="img-container d-flex">
+                            <img src="assets/images/services/1.png" alt="services">
+                        </div>
+                    </div>
+                    <div class="services-col">
+                        <div class="txt-container p-20">
+                            <h4>Buy a New Home</h4>
+                            <p class="sub-desc text-base py-10 px-0 text-gray">Simplify your home-buying journey with
+                                expert guidance.</p>
+                            <p class="desc text-base py-10 px-0">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                elit. Molestiae, suscipit ad. Debitis et officiis, vitae voluptatum, ad repudiandae
+                                ullam enim ratione corporis nihil architecto est explicabo voluptates consequatur sunt
+                                molestiae!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-row w-100 h-100 d-flex justify-center items-center ">
+                    <div class="services-col">
+                        <div class="img-container d-flex">
+                            <img src="assets/images/services/2.jpg" alt="services">
+                        </div>
+                    </div>
+                    <div class="services-col">
+                        <div class="txt-container p-20">
+                            <h4>Sell a Home</h4>
+                            <p class="sub-desc text-base py-10 px-0 text-gray">Get the best value for your property with
+                                our proven strategies.</p>
+                            <p class="desc text-base py-10 px-0">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                elit. Molestiae, suscipit ad. Debitis et officiis, vitae voluptatum, ad repudiandae
+                                ullam enim ratione corporis nihil architecto est explicabo voluptates consequatur sunt
+                                molestiae!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-row w-100 h-100 d-flex justify-center items-center ">
+                    <div class="services-col">
+                        <div class="img-container d-flex">
+                            <img src="assets/images/services/3.jpg" alt="services">
+                        </div>
+                    </div>
+                    <div class="services-col">
+                        <div class="txt-container p-20">
+                            <h4>Rent a Home</h4>
+                            <p class="sub-desc text-base py-10 px-0 text-gray">Find rental properties that feel like
+                                home.</p>
+                            <p class="desc text-base py-10 px-0">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                elit. Molestiae, suscipit ad. Debitis et officiis, vitae voluptatum, ad repudiandae
+                                ullam enim ratione corporis nihil architecto est explicabo voluptates consequatur sunt
+                                molestiae!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services section end here -->
+    <!-- Cities Section start here -->
+    <section class="cities-section w-100 h-100 d-flex justify-center items-center py-30 px-0">
+        <div class="cities-container w-100 h-100 d-flex justify-center items-center flex-column gap-20">
+            <div class="title-container d-flex flex-column gap-5 text-center text-center">
+                <h5 class="subtitle">Explore Cities</h5>
+                <h2 class="title">Discover the Best Locations to Call Home</h2>
+            </div>
+            <div class="cities-content-container p-20">
+                <div class="swiper citiesSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="cities-card d-flex justify-center items-center">
+                                <div class="img-container w-100 h-100 d-flex justify-center items-center">
+                                    <img src="assets/images/cities/1.jpeg" alt="City">
+                                </div>
+                                <div class="txt-container">
+                                    <h4 class="text-lg">Naperville</h4>
+                                    <p class="text-base text-gray py-5 px-0">300 Properties</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cities-card d-flex justify-center items-center">
+                                <div class="img-container w-100 h-100 d-flex justify-center items-center">
+                                    <img src="assets/images/cities/2.jpeg" alt="City">
+                                </div>
+                                <div class="txt-container">
+                                    <h4 class="text-lg">Pembroke Pines</h4>
+                                    <p class="text-base text-gray py-5 px-0">150 Properties</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cities-card d-flex justify-center items-center">
+                                <div class="img-container w-100 h-100 d-flex justify-center items-center">
+                                    <img src="assets/images/cities/3.jpeg" alt="City">
+                                </div>
+                                <div class="txt-container">
+                                    <h4 class="text-lg">Toledo</h4>
+                                    <p class="text-base text-gray py-5 px-0">250 Properties</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cities-card d-flex justify-center items-center">
+                                <div class="img-container w-100 h-100 d-flex justify-center items-center">
+                                    <img src="assets/images/cities/4.jpeg" alt="City">
+                                </div>
+                                <div class="txt-container">
+                                    <h4 class="text-lg">Paris</h4>
+                                    <p class="text-base text-gray py-5 px-0">111 Properties</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cities-card d-flex justify-center items-center">
+                                <div class="img-container w-100 h-100 d-flex justify-center items-center">
+                                    <img src="assets/images/cities/5.jpeg" alt="City">
+                                </div>
+                                <div class="txt-container">
+                                    <h4 class="text-lg">Miami</h4>
+                                    <p class="text-base text-gray py-5 px-0">85 Properties</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cities-card d-flex justify-center items-center">
+                                <div class="img-container w-100 h-100 d-flex justify-center items-center">
+                                    <img src="assets/images/cities/6.jpeg" alt="City">
+                                </div>
+                                <div class="txt-container">
+                                    <h4 class="text-lg">Austin</h4>
+                                    <p class="text-base text-gray py-5 px-0">14 Properties</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Cities Section end here -->
+    <!-- Top Properties section start here-->
+    <section class="top-properties-section w-100 h-100 d-flex justify-center items-center">
+        <div class="top-properties-container w-100 h-100 d-flex justify-center items-center flex-column gap-20">
+            <div class="title-container d-flex flex-column gap-5 text-center">
+                <h5 class="subtitle">Top Properties</h5>
+                <h2 class="title">Explore Our Top-Rated Listings</h2>
+            </div>
+            <div class="content-container ">
+                <div class="top-properties-content-container grid-layout gap-20 justify-center">
+
+                    <div class="product-card d-flex flex-column gap-5" data-category="villas">
+                        <div class="img-container"><img src="assets/images/properties/3.jpeg" alt="product"
+                                class="product-img"></div>
+                        <div class="txt-container d-flex flex-column gap-10 justify-center">
+                            <h3 class="text-center">Luxury Villa</h3>
+                            <ul class="product-top-list d-flex justify-between">
+                                <li><i class="fa-solid fa-bed"></i> Beds:5</li>
+                                <li><i class="fa-solid fa-bath"></i> Baths:4</li>
+                                <li><i class="fa-solid fa-expand"></i> Sqft:3,200</li>
+                            </ul>
+                            <div class="price-container d-flex justify-end">
+                                <h5>$620,000</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card d-flex flex-column gap-5" data-category="house">
+                        <div class="img-container"><img src="assets/images/properties/4.jpeg" alt="product"
+                                class="product-img"></div>
+                        <div class="txt-container d-flex flex-column gap-10 justify-center">
+                            <h3 class="text-center">Cozy Bungalow</h3>
+                            <ul class="product-top-list d-flex justify-between">
+                                <li><i class="fa-solid fa-bed"></i> Beds:3</li>
+                                <li><i class="fa-solid fa-bath"></i> Baths:2</li>
+                                <li><i class="fa-solid fa-expand"></i> Sqft:1,400</li>
+                            </ul>
+                            <div class="price-container d-flex justify-end">
+                                <h5>$210,000</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card d-flex flex-column gap-5" data-category="office">
+                        <div class="img-container"><img src="assets/images/properties/5.jpeg" alt="product"
+                                class="product-img"></div>
+                        <div class="txt-container d-flex flex-column gap-10 justify-center">
+                            <h3 class="text-center">Suburban Townhouse</h3>
+                            <ul class="product-top-list d-flex justify-between">
+                                <li><i class="fa-solid fa-bed"></i> Beds:4</li>
+                                <li><i class="fa-solid fa-bath"></i> Baths:3</li>
+                                <li><i class="fa-solid fa-expand"></i> Sqft:2,000</li>
+                            </ul>
+                            <div class="price-container d-flex justify-end">
+                                <h5>$530,000</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card d-flex flex-column gap-5" data-category="villas">
+                        <div class="img-container"><img src="assets/images/properties/6.jpeg" alt="product"
+                                class="product-img"></div>
+                        <div class="txt-container d-flex flex-column gap-10 justify-center">
+                            <h3 class="text-center">Charming Cottage</h3>
+                            <ul class="product-top-list d-flex justify-between">
+                                <li><i class="fa-solid fa-bed"></i> Beds:2</li>
+                                <li><i class="fa-solid fa-bath"></i> Baths:1</li>
+                                <li><i class="fa-solid fa-expand"></i> Sqft:850</li>
+                            </ul>
+                            <div class="price-container d-flex justify-end">
+                                <h5>$2,450,000</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card d-flex flex-column gap-5" data-category="apartment">
+                        <div class="img-container"><img src="assets/images/properties/7.jpeg" alt="product"
+                                class="product-img"></div>
+                        <div class="txt-container d-flex flex-column gap-10 justify-center">
+                            <h3 class="text-center">Spacious Penthouse</h3>
+                            <ul class="product-top-list d-flex justify-between">
+                                <li><i class="fa-solid fa-bed"></i> Beds:4</li>
+                                <li><i class="fa-solid fa-bath"></i> Baths:3</li>
+                                <li><i class="fa-solid fa-expand"></i> Sqft:2,800</li>
+                            </ul>
+                            <div class="price-container d-flex justify-end">
+                                <h5>$530,000</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card d-flex flex-column gap-5" data-category="office">
+                        <div class="img-container"><img src="assets/images/properties/9.jpeg" alt="product"
+                                class="product-img"></div>
+                        <div class="txt-container d-flex flex-column gap-10 justify-center">
+                            <h3 class="text-center">Skyline Penthouse</h3>
+                            <ul class="product-top-list d-flex justify-between">
+                                <li><i class="fa-solid fa-bed"></i> Beds:4</li>
+                                <li><i class="fa-solid fa-bath"></i> Baths:3</li>
+                                <li><i class="fa-solid fa-expand"></i> Sqft:3,000</li>
+                            </ul>
+                            <div class="price-container d-flex justify-end">
+                                <h5>$340,000</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Top Properties section end here-->
+    <!-- About section start here -->
+    <section class="abt-section w-100 h-100 d-flex justify-center items-center py-30 px-0">
+        <div class="abt-container w-100 h-100 d-flex flex-column justify-center items-center gap-20">
+            <div class="title-container d-flex flex-column gap-5 text-center">
+                <h5 class="subtitle">About Us</h5>
+                <h2 class="title">Your Trusted Partner in Real Estate</h2>
+            </div>
+            <div
+                class="content-container abt-section w-100 h-100 d-flex flex-column justify-center items-center gap-20">
+                <div class="abt-col w-100 d-flex flex-column justify-center items-center">
+                    <div class="img-container h-100 d-flex ">
+                        <img src="assets/images/about/about.jpg" alt="About">
+                    </div>
+                </div>
+                <div class="abt-col w-100 d-flex flex-column justify-center items-center">
+                    <div class="text-container h-100 d-flex flex-column gap-20">
+                        <p class="desc text-base text-gray">At Bento Works, we are dedicated to helping you find the
+                            perfect place to call
+                            home. With years of experience in the real estate market, our team specializes in buying,
+                            selling, and renting properties tailored to meet your unique needs. We pride ourselves on
+                            delivering exceptional service, transparency, and expert guidance throughout your real
+                            estate journey.</p>
+                        <p class="content text-base text-gray">Whether you're searching for your dream home, looking to
+                            sell at the best
+                            value, or seeking an ideal rental, we are here to make the process seamless and stress-free.
+                            Let us turn your property goals into reality.</p>
+                        <blockquote>"Your Home. Your Future. Our Commitment."</blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About section end here -->
+    <!-- Testimonials section Starts here -->
+    <section class="tsm-section w-100 h-100 d-flex justify-center items-center py-30 px-0">
+        <div class="tsm-container  w-100 h-100 d-flex flex-column justify-center items-center gap-10">
+            <div class="title-container d-flex flex-column gap-5 text-center">
+                <h5 class="subtitle">Our Testimonials</h5>
+                <h2 class="title">What Our Clients Say</h2>
+            </div>
+            <div class="content-container w-100 h-100 d-flex flex-column justify-center items-center gap-10">
+                <div class="swiper tsmSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="tsm-card w-100 h-100 d-flex flex-column justify-center items-center gap-15">
+                                <div class="top">
+                                    <i class="fa-solid fa-quote-right"></i>
+                                </div>
+                                <div class="center">
+                                    <h5>"We found our dream home within weeks. The team was amazing!"</h5>
+                                </div>
+                                <div class="bottom">
+                                    <div class="bottom-row w-100 h-100 d-flex justify-center items-center gap-20">
+                                        <div class="bottom-col">
+                                            <div class="img-container">
+                                                <img src="assets/images/testimonial/01.jpeg" alt="Reviewer">
+                                            </div>
+                                        </div>
+                                        <div class="bottom-col">
+                                            <h5>Emily & John</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tsm-card w-100 h-100 d-flex flex-column justify-center items-center gap-15">
+                                <div class="top">
+                                    <i class="fa-solid fa-quote-right"></i>
+                                </div>
+                                <div class="center">
+                                    <h5>"Selling my property was seamless thanks to their expertise."</h5>
+                                </div>
+                                <div class="bottom">
+                                    <div class="bottom-row w-100 h-100 d-flex justify-center items-center gap-20">
+                                        <div class="bottom-col">
+                                            <div class="img-container">
+                                                <img src="assets/images/testimonial/02.jpeg" alt="Reviewer">
+                                            </div>
+                                        </div>
+                                        <div class="bottom-col">
+                                            <h5>Mike D.</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tsm-card w-100 h-100 d-flex flex-column justify-center items-center gap-15">
+                                <div class="top">
+                                    <i class="fa-solid fa-quote-right"></i>
+                                </div>
+                                <div class="center">
+                                    <h5>"I found the perfect rental property in no time!"</h5>
+                                </div>
+                                <div class="bottom">
+                                    <div class="bottom-row w-100 h-100 d-flex justify-center items-center gap-20">
+                                        <div class="bottom-col">
+                                            <div class="img-container">
+                                                <img src="assets/images/testimonial/03.jpeg" alt="Reviewer">
+                                            </div>
+                                        </div>
+                                        <div class="bottom-col">
+                                            <h5>Sophia R.</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tsm-card w-100 h-100 d-flex flex-column justify-center items-center gap-15">
+                                <div class="top">
+                                    <i class="fa-solid fa-quote-right"></i>
+                                </div>
+                                <div class="center">
+                                    <h5>"Our first home-buying experience was stress-free and enjoyable. Highly
+                                        recommended!"</h5>
+                                </div>
+                                <div class="bottom">
+                                    <div class="bottom-row w-100 h-100 d-flex justify-center items-center gap-20">
+                                        <div class="bottom-col">
+                                            <div class="img-container">
+                                                <img src="assets/images/testimonial/04.jpeg" alt="Reviewer">
+                                            </div>
+                                        </div>
+                                        <div class="bottom-col">
+                                            <h5>Alex & Maria</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials section Ends here -->
+    <!-- Contact Section Starts Here -->
+    <section class="contact-section w-100 h-100 d-flex justify-center items-center py-40 px-0">
+        <div class="contact-container w-100 h-100 d-flex justify-center items-start gap-30">
+            <div class="contact-col d-flex flex-column gap-20">
+                <div class="title-container d-flex flex-column gap-5 text-center">
+                    <h5 class="subtitle">Contact Us</h5>
+                    <h2 class="title">Get in Touch with Us Today!</h2>
+                </div>
+                <div class="contact-form-container p-20">
+                    <form action="#" class="form d-flex flex-column justify-center items-center gap-10">
+                        <fielset class="input-row">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" placeholder="Enter Your Name...">
+                        </fielset>
+                        <fielset class="input-row">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" placeholder="Enter Your Email...">
+                        </fielset>
+                        <fielset class="input-row">
+                            <label for="phone">Phone</label>
+                            <input type="number" name="phone" placeholder="Enter Your Number...">
+                        </fielset>
+                        <fielset class="input-row">
+                            <label for="message">Message</label>
+                            <textarea name="message" placeholder="Enter Your Message..."></textarea>
+                        </fielset>
+                        <button class="contact-submit-btn" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="contact-col">
+                <div class="title-container d-flex flex-column gap-5">
+                    <h5 class="subtitle">More Info</h5>
+                    <h2 class="title">Additional Info About Us</h2>
+                </div>
+                <div class="contact-info-container w-100 h-100">
+                    <ul
+                        class="contact-info-list w-100 h-100 d-flex flex-column justify-start items-center gap-20 pt-20">
+                        <li>
+                            <div class="cnt-icon-cntr">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="cnt-data-cntr">
+                                <h5>+1 123-456-7890</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cnt-icon-cntr">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="cnt-data-cntr">
+                                <h5>contact@yourrealestate.com</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cnt-icon-cntr">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="cnt-data-cntr">
+                                <h5>123 Real Estate Blvd, City, State, ZIP</h5>
+                            </div>
+                        </li>
+                    </ul>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34868.52096586178!2d-52.279392677618965!3d-13.549731400803262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x936d1679f567e3f3%3A0x149cd7aad2a35cd6!2sCanarana%2C%20State%20of%20Mato%20Grosso%2C%2078640-000%2C%20Brazil!5e1!3m2!1sen!2sin!4v1751047260342!5m2!1sen!2sin"
+                        class="map w-100" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section Ends Here -->
+    <!-- Meet Our Team Section Starts Here -->
+    <section class="team-section w-100 h-100 d-flex justify-center items-center">
+        <div class="team-container h-100 d-flex flex-column justify-center items-center">
+            <div class="title-container d-flex flex-column gap-5 text-center">
+                <h5 class="subtitle">Our Team</h5>
+                <h2 class="title">Meet the Experts Behind Your Real Estate Journey</h2>
+            </div>
+            <div class="contact-info-container w-100 h-100 d-flex justify-center items-center p-20">
+                <div class="team-row  w-100 h-100 d-flex justify-center items-center gap-20">
+                    <div class="team-col d-flex flex-column justify-center items-center gap-20">
+                        <div class="img-container w-100 h-100 d-flex">
+                            <img src="assets/images/agents/1.jpeg" alt="team">
+                        </div>
+                        <div class="txt-container text-center">
+                            <h4>John Smiriti</h4>
+                            <p class="text-gray text-base">Founder & Real Estate Specialist</p>
+                        </div>
+                    </div>
+                    <div class="team-col d-flex flex-column justify-center items-center gap-20">
+                        <div class="img-container w-100 h-100 d-flex">
+                            <img src="assets/images/agents/2.jpeg" alt="team">
+                        </div>
+                        <div class="txt-container text-center">
+                            <h4>Kunal Mishra</h4>
+                            <p class="text-gray text-base">Client Relations Manager</p>
+                        </div>
+                    </div>
+                    <div class="team-col d-flex flex-column justify-center items-center gap-20">
+                        <div class="img-container w-100 h-100 d-flex">
+                            <img src="assets/images/agents/3.jpeg" alt="team">
+                        </div>
+                        <div class="txt-container text-center">
+                            <h4>Lisa White</h4>
+                            <p class="text-gray text-base">Property Consultant</p>
+                        </div>
+                    </div>
+                    <div class="team-col d-flex flex-column justify-center items-center gap-20">
+                        <div class="img-container w-100 h-100 d-flex">
+                            <img src="assets/images/agents/4.jpeg" alt="team">
+                        </div>
+                        <div class="txt-container text-center">
+                            <h4>Jane Doe</h4>
+                            <p class="text-gray text-base">Marketing Expert</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Meet Our Team Section Ends Here -->
+    <!-- Brand Section Starts Here -->
+    <section class="brand-section w-100 h-100 d-flex justify-center items-center py-30 px-0">
+        <div class="brand-container h-100 d-flex flex-column justify-center items-center gap-30">
+            <div class="title-container d-flex flex-column gap-5 text-center">
+                <h2 class="title">Trusted by Over 150+ Major Companiies</h2>
+            </div>
+            <div class="contact-container w-100 h-100 d-flex justify-center items-center">
+                <div class="swiper brandSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="img-container w-100 h-100 d-flex justify-center items-center">
+                                <img src="assets/images/clients/1.svg" alt="Client">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img-container">
+                                <img src="assets/images/clients/2.svg" alt="Client">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img-container w-100 h-100 d-flex justify-center items-center">
+                                <img src="assets/images/clients/3.svg" alt="Client">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img-container w-100 h-100 d-flex justify-center items-center">
+                                <img src="assets/images/clients/4.svg" alt="Client">
+                            </div>
+                        </div>
+                        <div class="swiper-slide w-100 h-100 d-flex justify-center items-center">
+                            <div class="img-container">
+                                <img src="assets/images/clients/5.svg" alt="Client">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img-container w-100 h-100 d-flex justify-center items-center">
+                                <img src="assets/images/clients/6.svg" alt="Client">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Brand Section Ends Here -->
+    <!-- Footer Section Starts Here -->
+    <footer>
+        <div class="footer-section w-100 h-100 d-flex flex-column justify-center items-center gap-20 p-40">
+            <nav class="footer-container h-100 d-flex flex-column justify-center items-center gap-20">
+                <ul class="footer-list d-flex justify-center items-center gap-20 text-base">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#properties">Properties</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="copy-cont">
+                <p>2025 <i class="fa-regular fa-copyright"></i> Bento Works, All Rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section Ends Here -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/fontawesome.min.js"
+        integrity="sha512-j12pXc2gXZL/JZw5Mhi6LC7lkiXL0e2h+9ZWpqhniz0DkDrO01VNlBrG3LkPBn6DgG2b8CDjzJT+lxfocsS1Vw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+        integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
